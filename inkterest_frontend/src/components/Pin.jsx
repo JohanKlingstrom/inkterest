@@ -69,7 +69,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
                 </a>
               </div>
               {alreadySaved ? (
-                <button type="button" className="bg-red-500 opacity-70 hover:opacity-100 text-white px-5 py-1 text-base rounded-3xl hover:shadow-md outlined-none">
+                <button type="button" className="bg-gray-900 opacity-70 hover:opacity-100 text-white px-5 py-1 text-base rounded-3xl hover:shadow-md outlined-none">
                   {save?.length} Saved
                 </button>
               ) : (
@@ -79,7 +79,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
                     savePin(_id);
                   }}
                   type="button" 
-                  className="bg-red-500 opacity-70 hover:opacity-100 text-white px-5 py-1 text-base rounded-3xl hover:shadow-md outlined-none"
+                  className="bg-gray-900 opacity-70 hover:opacity-100 text-white px-5 py-1 text-base rounded-3xl hover:shadow-md outlined-none"
                 >
                   Save
                 </button>

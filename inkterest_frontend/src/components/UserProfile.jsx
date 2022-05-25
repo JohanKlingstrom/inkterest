@@ -8,7 +8,7 @@ import { client } from '../client';
 import MasonryLayout from './MasonryLayout';
 import Spinner from './Spinner';
 
-const activeBtnStyles = 'bg-red-500 text-white font-bold p-2 rounded-full w-20 outline-none';
+const activeBtnStyles = 'bg-gray-900 text-white font-bold p-2 rounded-full w-20 outline-none';
 const notActiveBtnStyles = 'bg-primary mr-4 text-black font-bold p-2 rounded-full w-20 outline-none';
 
 const randomImg = 'https://source.unsplash.com/1600x900/?nature,photography,technology';
@@ -94,7 +94,7 @@ const UserProfile = () => {
                 />
               </div>
             </div>
-            <div className="text-center mb-7">
+            <div className="text-center mb-7 mt-3">
                 <button
                   type="button"
                   onClick={(e) => {

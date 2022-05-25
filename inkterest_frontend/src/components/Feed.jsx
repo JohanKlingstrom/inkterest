@@ -32,6 +32,9 @@ const Feed = () => {
   }, [categoryId])
 
   if(loading) return <Spinner message="We are adding new designs to your feed!" />
+
+  if(!pins?.length) return <h2>No designs available.. Yet!</h2>
+
   return (
     <div>
       {pins && <MasonryLayout pins={pins} />}
