@@ -8,7 +8,7 @@ import { client } from '../client';
 import MasonryLayout from './MasonryLayout';
 import Spinner from './Spinner';
 
-const activeBtnStyles = 'bg-gray-900 text-white font-bold p-2 rounded-full w-20 outline-none';
+const activeBtnStyles = 'bg-gray-900 text-white font-bold p-2 rounded-full w-25 outline-none';
 const notActiveBtnStyles = 'bg-primary mr-4 text-black font-bold p-2 rounded-full w-20 outline-none';
 
 const randomImg = 'https://source.unsplash.com/1600x900/?nature,photography,technology';
@@ -76,22 +76,22 @@ const UserProfile = () => {
               <h1 className="font-bold text-3xl text-center mt-3">
                 {user.userName}
               </h1>
-              <div className="absolute top-0 z-1 right-0">
-              <GoogleLogout 
-                  clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
-                  render={(renderProps) => (
-                    <button
-                      type="button"
-                      className="bg-white p-2 rounded-full cursor-pointer outline-none shadow-md"
-                      onClick={renderProps.onClick}
-                      disabled={renderProps.disabled}
-                    >
-                      <AiOutlineLogout color="red" fontSize={21} />
-                    </button>
-                  )}
-                  onLogoutSuccess={logout}
-                  cookiePolicy="single_host_origin"
-                />
+              <div className="absolute top-0 z-1 right-0 p-2 m-3">
+                <GoogleLogout 
+                    clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
+                    render={(renderProps) => (
+                      <button
+                        type="button"
+                        className="bg-white p-2 rounded-full cursor-pointer outline-none shadow-md"
+                        onClick={renderProps.onClick}
+                        disabled={renderProps.disabled}
+                      >
+                        <AiOutlineLogout color="red" fontSize={21} />
+                      </button>
+                    )}
+                    onLogoutSuccess={logout}
+                    cookiePolicy="single_host_origin"
+                  />
               </div>
             </div>
             <div className="text-center mb-7 mt-3">
