@@ -1,7 +1,7 @@
 # INKTEREST ✒️
 
 Inkterest is an image sharing social media web application for tattoo enthusiasts. Users can share, comment on, and save designs and tattoos.
-It was built as an exercise in React, Sanity and TailwindCSS.
+It was built as an exercise in React, Sanity and TailwindCSS. This project is a customised version of an original project by JavaScript Mastery on YouTube.
 Project can be viewed live at [inkterest.netlify.app](https://inkterest.netlify.app/)
 
 ### Built With
